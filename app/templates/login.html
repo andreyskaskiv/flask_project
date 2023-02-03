@@ -1,0 +1,36 @@
+{% extends '_base.html' %}
+
+{% block content %}
+    {{ super() }}
+    {% for cat, msg in get_flashed_messages(True) %}
+        <div class="flash {{ cat }}">{{ msg }}</div>
+    {% endfor %}
+
+    <div id="login_form">
+        <h1>Login: </h1>
+
+        <form action="" method="post" class="form-contact">
+            <ul class="login_list">
+                <li>
+                    <div class="login_title">Email:</div>
+                    <input class="login_input" type="text" name="email" value="">
+                </li>
+                <li>
+                    <div class="login_title">Password:</div>
+                    <input class="login_input" type="password" name="psw" value="">
+                </li>
+                <li>
+                    <input type="checkbox" name="remainme">
+                    <span class="reg_argee">Remember me</span>
+                </li>
+            </ul>
+
+            <div id="login_control">
+                <div style="float: left;"><input class="login_button" type="submit" value="To come in"></div>
+                <div style="float: right;" class="register_button"><a href="{{ url_for('auth.register') }}">Registration</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+{% endblock %}

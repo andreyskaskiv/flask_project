@@ -1,0 +1,373 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* --- Header Section --- */
+#header {
+    background: rgba(200, 238, 246, 0.39);
+    background-image: url("../img/head.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+    height: 65px; /* content */
+    width: 100%;
+}
+
+.head1 {
+    font-size: 32px;
+    color: #009900;
+    font-weight: bold;
+    margin-top: -8px;
+    margin-left: 20px;
+}
+
+.head2 {
+    font-size: 12px;
+    color: gold;
+    margin-top: -2px;
+    margin-left: 20px;
+    /*float: right;*/
+    margin-right: 10px;
+}
+
+/* --- Menu Navigation Bar --- */
+.mainmenu, .menu-log {
+    position: sticky;
+    top: 0;
+    background-color: rgb(34, 89, 63);
+    padding: 2px 0 2px 0;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #ecd005;
+}
+
+.mainmenu ul {
+    list-style: none
+}
+
+/*.mainmenu li {*/
+/*    float: left;*/
+/*    margin: 0 40px 0 10px;*/
+
+/*}*/
+
+.mainmenu ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    transition: all .6s ease;
+}
+
+.mainmenu ul li:hover, .mainmenu ul a:hover {
+    color: #ffea00;
+    text-decoration: none;
+    transform: scale(1.06);
+}
+
+.mainmenu li.last {
+    float: right;
+    margin: 2px 40px 0 10px;
+}
+
+.mainmenu li.basic {
+    float: left;
+    margin: 2px 40px 0 10px;
+}
+
+
+/* --- Body section --- */
+#content {
+    background-image: url("../img/fon_2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+    position: absolute;
+    width: 100%;
+    top: 79px; /* header 85 */
+    bottom: 35px; /* footer */
+}
+
+
+#leftbar {
+    background-color: rgba(200, 238, 246, 0.5);
+    border-right: 5px solid #d2e2f2;
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+
+#rightbar {
+    /*background-color: rgb(218, 230, 243);*/
+    padding-left: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* --- Dashboard --- */
+.aside h3 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.aside ul {
+    list-style: none
+}
+
+.aside ul li a {
+    color: #000000;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform .6s ease;
+}
+
+.aside ul li:hover, .aside ul a:hover {
+    color: #009800;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+
+/* --- Login Form --- */
+#login_form {
+    width: 450px;
+    margin: 20px auto 100px auto;
+
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8ebf42;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: grabbing;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.formcontainer {
+    text-align: left;
+    margin: 24px 10px 20px;
+}
+
+.container {
+    padding: 16px 0;
+    text-align: left;
+}
+
+span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+}
+
+/* --- Login Form --- */
+#login_form {
+    width: 350px;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 10px 10px 20px #aaa;
+    border-radius: 15px;
+}
+
+ul.login_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.login_list li {
+    margin: 10px 0 5px 0;
+}
+
+.login_title {
+    display: inline-block;
+    min-width: 100px;
+}
+
+input.login_input {
+    width: 200px;
+    height: 5px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 16px;
+}
+
+input.login_input:focus {
+    border-bottom: 1px solid #39b54a;
+}
+
+.login_select {
+    width: 250px;
+    font-size: 14px;
+    background: cornsilk;
+}
+
+.login_argee {
+    font-size: 12px;
+}
+
+textarea {
+    font-size: 18px;
+    color: #096407;
+    max-width: 330px;
+    max-height: 100px;
+}
+
+#login_control {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+input.login_button {
+    background: #ffcc66;
+    font-size: 18px;
+    color: #333333;
+    padding: 5px;
+    border: 1px solid #FFCF11;
+    border-radius: 5px;
+}
+
+.register_button  {
+    background: #ffcc66;
+    font-size: 18px;
+    color: #333333;
+    padding: 5px;
+    border: 1px solid #FFCF11;
+    border-radius: 5px;
+}
+
+.register_button a {
+    color: #333333;
+    text-decoration: none;
+}
+
+
+/* --- Registration Form --- */
+#reg_form {
+    width: 450px;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 10px 10px 20px #aaa;
+    border-radius: 15px;
+}
+
+ul.reg_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.reg_list li {
+    margin: 10px 0 5px 0;
+}
+
+.reg_title {
+    display: inline-block;
+    min-width: 100px;
+}
+
+input.reg_input {
+    width: 250px;
+    height: 5px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 16px;
+}
+
+input.reg_input:focus {
+    border-bottom: 1px solid #39b54a;
+}
+
+.reg_select {
+    width: 250px;
+    font-size: 14px;
+    background: cornsilk;
+}
+
+.reg_argee {
+    font-size: 12px;
+}
+
+textarea {
+    font-size: 18px;
+    color: #096407;
+    max-width: 330px;
+    max-height: 100px;
+}
+
+#reg_control {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+input.reg_button {
+    background: #ffcc66;
+    font-size: 18px;
+    color: #333333;
+    padding: 5px;
+    border: 1px solid #FFCF11;
+    border-radius: 5px;
+}
+
+
+/* --- Footer Section --- */
+#footer {
+    position: absolute;
+    height: 35px; /* content */
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(1, 59, 68);
+    color: #fff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#footer li {
+    list-style: none;
+    margin: 2px 0 2px 0;
+}
+
+
+/* --- flash --- */
+.flash {
+    width: 350px;
+    background: #cccccc;
+    text-align: center;
+    margin: 10px auto 0 auto;
+    border-radius: 15px;
+}

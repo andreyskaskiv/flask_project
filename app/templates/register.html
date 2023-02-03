@@ -1,0 +1,49 @@
+{% extends '_base.html' %}
+
+{% block content %}
+    {{ super() }}
+    {% for cat, msg in get_flashed_messages(True) %}
+        <div class="flash {{ cat }}">{{ msg }}</div>
+    {% endfor %}
+
+    <div id="reg_form">
+        <h1>Registration form</h1>
+        <form action="" method="post" class="form-contact">
+
+            <input type="hidden" name="id" value="123456">
+            <ul class="reg_list">
+                <li>
+                    <div class="reg_title">Name:</div>
+                    <input class="reg_input" type="text" name="name" value="">
+                </li>
+                <li>
+                    <div class="reg_title">Age:</div>
+                    <input class="reg_input" type="text" name="old" value="">
+                </li>
+                <li>
+                    <div class="reg_title">City:</div>
+                    <input class="reg_input" type="text" name="city" value="">
+                </li>
+                <li>
+                    <div class="reg_title">Email:</div>
+                    <input class="reg_input" type="text" name="email" value="">
+                </li>
+                <li>
+                    <div class="reg_title">Password:</div>
+                    <input class="reg_input" type="password" name="psw" value="">
+                </li>
+                <li>
+                    <div class="reg_title">Repeat pass:</div>
+                    <input class="reg_input" type="password" name="psw2" value="">
+                </li>
+
+            </ul>
+
+            <div id="reg_control">
+                <div style="float: left;"><input class="reg_button" type="submit" value="Register"></div>
+                <div style="float: right;"><input class="reg_button" type="reset" value="Clear form"></div>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}

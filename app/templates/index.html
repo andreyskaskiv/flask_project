@@ -1,0 +1,41 @@
+{% extends '_base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+{{ super() }}
+    <div id="leftbar">
+        <div class="aside">
+
+            <h3>Dashboard:</h3>
+            <ul>
+                <li><a href=""><i class="fa fa-gamepad" aria-hidden="true"></i> Game</a></li>
+                <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i> Config</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="rightbar">
+
+{#        <ul>#}
+{#            {% for user in list %}#}
+{#                <li>#}
+{#                    <p>id: {{ user.id }}, email: {{ user.email }}</p>#}
+{##}
+{#                    <ul>#}
+{#                        <li>Имя: {{ user.profiles.name }}</li>#}
+{#                        <li>Возраст: {{ user.profiles.old }}</li>#}
+{#                        <li>Город: {{ user.profiles.city }}</li>#}
+{#                    </ul>#}
+{##}
+{#                </li>#}
+{#            {% endfor %}#}
+{#        </ul>#}
+
+    </div>
+
+{% endblock %}
