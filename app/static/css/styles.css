@@ -50,11 +50,11 @@ html, body {
     list-style: none
 }
 
-/*.mainmenu li {*/
-/*    float: left;*/
-/*    margin: 0 40px 0 10px;*/
+.mainmenu li {
+    float: left;
+    margin: 0 40px 0 10px;
 
-/*}*/
+}
 
 .mainmenu ul li a {
     color: #fff;
@@ -74,10 +74,12 @@ html, body {
     margin: 2px 40px 0 10px;
 }
 
-.mainmenu li.basic {
-    float: left;
-    margin: 2px 40px 0 10px;
-}
+/*.mainmenu li.basic {*/
+/*    float: left;*/
+/*    margin: 2px 40px 0 10px;*/
+/*}*/
+
+.clear {clear: both;}
 
 
 /* --- Body section --- */
@@ -88,7 +90,7 @@ html, body {
     background-origin: content-box;
     position: absolute;
     width: 100%;
-    top: 79px; /* header 85 */
+    top: 85px; /* header 85 */
     bottom: 35px; /* footer */
 }
 
