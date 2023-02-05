@@ -10,7 +10,7 @@ def create_app(config_name='default'):
     app.static_folder = 'static'
     app.config.from_object(config[config_name])
 
-    db = SqliteDatabase(app.config['DB_NAME'])
+    db = SqliteDatabase(app.config['DB_NAME'], pragmas={'foreign_keys': 'on'})
     database_proxy.initialize(db)
     app.config['db'] = db
 
