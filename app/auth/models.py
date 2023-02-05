@@ -16,3 +16,5 @@ class Users(BaseModel):
     psw = CharField(max_length=500)
     date = DateTimeField(default=datetime.now())
     profile = ForeignKeyField(Profiles)
+
+

@@ -6,5 +6,26 @@
 
 {% block content %}
 {{ super() }}
+
 <h1>Hi.....</h1>
+
+    <div id="rightbar">
+
+        <ul>
+            {% for user in list %}
+                <li>
+                    <p>id: {{ user.id }}, email: {{ user.email }}</p>
+
+                    <ul>
+                        <li>Имя: {{ user.name}}</li>
+                        <li>Возраст: {{ user.old }}</li>
+                        <li>Город: {{ user.city }}</li>
+                    </ul>
+
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
 {% endblock %}
