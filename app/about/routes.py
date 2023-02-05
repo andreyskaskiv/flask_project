@@ -1,7 +1,8 @@
 from flask import render_template
 
 from app.about import about
-from app.main.routes import menu
+from app.main_menu import menu
+
 
 @about.route("/about", methods=["POST", "GET"])
 def about():

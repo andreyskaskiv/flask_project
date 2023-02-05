@@ -1,7 +1,7 @@
 from flask import render_template
 
 from app.auth import auth
-from app.main.routes import menu
+from app.main_menu import menu
 
 
 @auth.route("/login", methods=["POST", "GET"])
