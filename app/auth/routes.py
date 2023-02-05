@@ -49,9 +49,10 @@ def logout():
 @auth.route('/profile')
 @login_required
 def profile():
-    return f"""<a href="{url_for('auth.logout')}">Выйти из профиля</a>
-                user info: {current_user.get_id()} """
-
+    title = "Profile"
+    return render_template("profile.html",
+                           title=title,
+                           menu=menu)
 
 @auth.route("/register", methods=("POST", "GET"))
 def register():
