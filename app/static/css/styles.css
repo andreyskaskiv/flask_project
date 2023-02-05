@@ -274,6 +274,16 @@ input.login_button {
     text-decoration: none;
 }
 
+/* --- Login Form invalid -- */
+.form-contact .invalid {
+	display: inline-block;
+	background: #FF9898;
+}
+.form-contact .invalid-feedback {
+	color: #CC0000;
+}
+
+
 
 /* --- Registration Form --- */
 #reg_form {
@@ -399,3 +409,5 @@ ul.profile-info {
 	color: #7E652F;
 }
 ul.profile-info li {margin-top: 10px;}
+
+
